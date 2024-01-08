@@ -1,15 +1,7 @@
-//your JS code here. If required.
- // Initialize the counter value
-    let counterValue = 0;
-
-    // Function to increment the counter and display an alert
-    function incrementCounter() {
-      // Display an alert with the un-incremented value
-      alert("Un-incremented value: " + counterValue);
-
-      // Increment the counter value
-      counterValue++;
-
-      // Update the counter value in the HTML
-      document.getElementById('counter').innerText = counterValue;
-    }
+let button = document.getElementById('incrementBtn');
+button.addEventListener('click', function() {
+			let counter = document.getElementById("counter");
+            let count = parseInt(counter.innerText);
+            alert(count);
+            counter.innerText = count + 1;
+});
